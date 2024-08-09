@@ -13,18 +13,18 @@ int main() {
         root1 = (-b + sqrt(discriminant)) / (2 * a);
         root2 = (-b - sqrt(discriminant)) / (2 * a);
         printf("Roots are real and different.\n");
-        printf("root1 = %.2f\nroot2 = %.2f\n", root1, root2);
+        printf("root1 = %f\nroot2 = %f\n", root1, root2);
     }
     else if (discriminant == 0) {
         root1 = root2 = -b / (2 * a);
         printf("Roots are real and the same.\n");
-        printf("root1 = root2 = %.2f\n", root1);
+        printf("root1 = root2 = %f\n", root1);
     }
     else {
         realPart = -b / (2 * a);
         imaginaryPart = sqrt(-discriminant) / (2 * a);
         printf("Roots are complex and different.\n");
-        printf("root1 = %.2f+%.2fi\nroot2 = %.2f-%.2fi\n", realPart, imaginaryPart, realPart, imaginaryPart);
+        printf("root1 = %f+%fi\nroot2 = %f-%fi\n", realPart, imaginaryPart, realPart, imaginaryPart);
     }
 
     return 0;
