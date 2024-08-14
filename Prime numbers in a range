@@ -6,7 +6,11 @@ int main() {
     // Get the range from the user
     printf("Enter two numbers (intervals)(lower then higher): ");
     scanf("%d %d", &low, &high);
+    if(high<=low){
+    printf("Error Invalid Range");
+    }
 
+    else
     printf("Prime numbers between %d and %d are: ", low, high);
 
     // Iterate through the range
